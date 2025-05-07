@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio Pessoal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <button onclick="mostrarSecao('sobre')">Sobre Mim</button>
+    <button onclick="mostrarSecao('formacao')">Formação</button>
+    <button onclick="mostrarSecao('portfolio')">Portfólio</button>
+    <button onclick="mostrarSecao('contato')">Contato</button>
+  </nav>
+
+  <main>
+    <section id="sobre" class="conteudo">
+      <h2>Sobre Mim</h2>
+      <p>Oi! Me chamo willian, tenho 27 anos. Meu hobbie é passar tempo com a familia, gosto de ir em cafes e musculação. Atualmente estou cursando Engenharia de Software. Estou sempre procurando me desenvolver academicamente e profissionalmente desenvolvendo novos projetos e estudando linguagens como PHP,JAVASCRIPT,CSS e HTML.</p>
+    </section>
+
+    <section id="formacao" class="conteudo oculto">
+      <h2>Formação Educacional</h2>
+      <p>Estou cursando Engenharia de Software na instituição UNINTER. Tenho interesse em desenvolvimento web e programação em geral.</p>
+    </section>
+
+    <section id="portfolio" class="conteudo oculto">
+      <h2>Meu Portfólio</h2>
+      <ul>
+        <li><a href="https://github.com/willian-041" target="_blank">Projeto 1 - Página de login</a></li>
+      </ul>
+    </section>
+
+    <section id="contato" class="conteudo oculto">
+      <h2>Contato</h2>
+      <form>
+        <label for="nome">Nome:</label><br />
+        <input type="text" id="nome" name="nome" required /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br />
+        <label for="mensagem">Mensagem:</label><br />
+        <textarea id="mensagem" name="mensagem" required></textarea><br />
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
